@@ -1,16 +1,20 @@
 {
-  "name": "vue-theme-plugin",
-  "version": "0.1.0",
+  "name": "vue-css-var-theme-plugin",
+  "version": "0.0.1",
   "private": false,
   "main": "./src/plugins/themePlugin.js",
-  "author": "matteo",
+  "author": "matteoxgy",
   "license": "MIT",
   "keywords": [
     "vue",
     "theme",
     "plugin"
   ],
-  "description": "use css variables to change vue app theme elegantly",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matteoxgy/vue-theme-plugin"
+  },
+  "description": "Use css variables to change vue app theme elegantly.",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
