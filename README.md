@@ -1,24 +1,55 @@
-# demo
+# vue-css-var-theme-plugin
 
-## Project setup
-```
-yarn install
+### install
+
+`yarn add vue-css-var-theme-plugin`
+
+### use
+
+`main.js in vue2 project`
+
+```js
+import vueCssVarThemePlugin from 'yarn add vue-css-var-theme-plugin';
+
+import './xxx.css';
+
+Vue.use(vueCssVarThemePlugin, {
+    // all themes
+    themes: {
+        // light theme and its css variables
+        light: {
+            "--bg": "#fff",
+            "--color": "#333"
+        },
+        dark: {
+            "--bg": "#555",
+            "--color": "#eee"
+        }
+    },
+    // default theme name
+    defaultTheme: "light"
+});
 ```
 
-### Compiles and hot-reloads for development
-```
-yarn serve
+`xxx.css`
+
+```css
+.demo {
+    background: var(--bg);
+    color: var(--color);
+}
 ```
 
-### Compiles and minifies for production
-```
-yarn build
-```
+`xxx.vue`
 
-### Lints and fixes files
+```js
+export default {
+    // ……
+    watch: {
+        theme(newV) {
+            // call function $setTheme to change theme
+            this.$setTheme(newV);
+        }
+    }
+}
 ```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
