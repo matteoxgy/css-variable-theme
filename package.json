@@ -1,14 +1,26 @@
 {
-  "name": "demo",
+  "name": "vue-theme-plugin",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "main": "./src/plugins/themePlugin.js",
+  "author": "matteo",
+  "license": "MIT",
+  "keywords": [
+    "vue",
+    "theme",
+    "plugin"
+  ],
+  "description": "use css variables to change vue app theme elegantly",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "@typescript-eslint/parser": "^5.51.0",
     "core-js": "^3.8.3",
+    "typescript": "^4.9.5",
     "vue": "^2.6.14"
   },
   "devDependencies": {
@@ -17,7 +29,7 @@
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-eslint": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
-    "eslint": "^7.32.0",
+    "eslint": "^8.33.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^8.0.3",
