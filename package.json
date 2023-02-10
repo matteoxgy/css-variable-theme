@@ -16,8 +16,8 @@
   },
   "description": "Use css variables to change vue app theme elegantly.",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "demo": "vue-cli-service serve",
+    "build": "tsc",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {

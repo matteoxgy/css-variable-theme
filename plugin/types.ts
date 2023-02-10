@@ -1,9 +1,10 @@
 // 主题
 export type Theme = {
+  // css 变量名及对应值
   [key: string]: string;
 };
 
-// 主题映射对象
+// 主题键值对
 export type Themes = {
   [key: string]: Theme;
 };
@@ -12,5 +13,6 @@ export type Themes = {
 export type ThemePluginOptions = {
   themes: Themes;
 
+  // 默认主题
   defaultTheme: string;
 };
