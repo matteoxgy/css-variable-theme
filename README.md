@@ -9,7 +9,7 @@
 `main.js in vue2 project`
 
 ```js
-import vueCssVarThemePlugin from 'yarn add vue-css-var-theme-plugin';
+import vueCssVarThemePlugin from 'vue-css-var-theme-plugin';
 
 import './xxx.css';
 
