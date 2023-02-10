@@ -1,6 +1,6 @@
 {
   "name": "vue-css-var-theme-plugin",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "private": false,
   "main": "./src/plugins/themePlugin.js",
   "author": "matteoxgy",
