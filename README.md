@@ -1,33 +1,24 @@
-# vue-css-var-theme-plugin
+# css-variable-theme
 
 ### install
 
-`yarn add vue-css-var-theme-plugin`
+`yarn add css-variable-theme`
 
 ### use
 
-`main.js in vue2 project`
-
 ```js
-import vueCssVarThemePlugin from 'vue-css-var-theme-plugin';
+import { registerThemes } from 'css-variable-theme';
 
-import './xxx.css';
-
-Vue.use(vueCssVarThemePlugin, {
-    // all themes
-    themes: {
-        // light theme and its css variables
-        light: {
-            "--bg": "#fff",
-            "--color": "#333"
-        },
-        dark: {
-            "--bg": "#555",
-            "--color": "#eee"
-        }
+registerThemes({
+    // light theme and its css variables
+    light: {
+        "--bg": "#fff",
+        "--color": "#333"
     },
-    // default theme name
-    defaultTheme: "light"
+    dark: {
+        "--bg": "#555",
+        "--color": "#eee"
+    }
 });
 ```
 
@@ -40,16 +31,10 @@ Vue.use(vueCssVarThemePlugin, {
 }
 ```
 
-`xxx.vue`
+`another.js`
 
 ```js
-export default {
-    // ……
-    watch: {
-        theme(newV) {
-            // call function $setTheme to change theme
-            this.$setTheme(newV);
-        }
-    }
-}
+import { setTheme } from 'css-variable-theme';
+
+setTheme('light');
 ```
