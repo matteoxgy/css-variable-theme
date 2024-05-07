@@ -1,7 +1,7 @@
 /**
  * 主题键值对
  */
-let themes = {};
+let themes: any = {};
 
 /**
  * 注册主题
@@ -16,7 +16,7 @@ export function registerThemes(themes: any) {
  * @param themeName 主题键名
  */
 export function setTheme(themeName: string) {
-	const theme = (themes as any)[themeName];
+	const theme = themes[themeName];
 
 	// 为主题中所有的变量进行赋值
 	for (const key in theme) {
